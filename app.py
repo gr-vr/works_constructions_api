@@ -72,7 +72,7 @@ def create_version():
 
 def get_current_version():
     if not WorksVersion.query.all():
-    create_version()
+        create_version()
     
     version = WorksVersion.query.order_by(WorksVersion.id.desc()).first()
     return version.id
