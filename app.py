@@ -6,7 +6,7 @@ from flask_marshmallow import Marshmallow
 
 app = Flask(__name__)
 api = Api(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:906@localhost:5432/construction_works"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://gifsozwfgjskzg:bb881fd8453e38232f4ae0eef4cb75ad3f6156880e0f4cf69723ab4981d01543@ec2-18-215-111-67.compute-1.amazonaws.com:5432/dcjddsv1k093k"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
